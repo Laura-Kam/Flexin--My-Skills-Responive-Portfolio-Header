@@ -1,0 +1,246 @@
+* {
+  margin: 0 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.header__logo {
+  background-image: url("./src/images/LK-Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+}
+.header__menu {
+  font-size: 2.5vw;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.header__menu a {
+  text-decoration: none;
+  color: rgba(98, 98, 98, 0.8352941176);
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.header__menu a:hover {
+  color: #007eaf;
+}
+.header__menu a:active {
+  color: #006086;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  padding: 2rem;
+  border-radius: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+.main__image {
+  width: 50%;
+  background-image: url("./src/images/Profile-Pic-LK.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__text {
+  flex-direction: column;
+  width: 50%;
+  color: rgba(98, 98, 98, 0.9647058824);
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.main__text--1 {
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+.main__text--hobbies {
+  margin: 1.6rem 0 0 0;
+}
+.main__text--5 {
+  font-weight: 300;
+  font-size: 1.4rem;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 0.5rem;
+}
+.main .main__text--name {
+  color: #007eaf;
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
+}
+
+.footer {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  justify-content: flex-end;
+  margin-right: 18%;
+}
+.footer [class^=footer] img {
+  width: 5.3vw;
+}
+.footer__link {
+  color: rgba(140, 140, 140, 0.8352941176);
+  font-size: 2rem;
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: rgba(103, 103, 103, 0.8352941176);
+}
+
+@media (max-width: 1024px) {
+  .header {
+    justify-content: center;
+    text-align: center;
+  }
+  .header__logo {
+    background-image: url("./src/images/LK-Logo.png");
+    width: 70px;
+    height: 70px;
+    justify-content: start;
+    flex-shrink: 0;
+  }
+  .main {
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-size: 100%;
+    background-position: center;
+  }
+  .main__image {
+    width: 60%;
+    height: 600px;
+    background-size: contain;
+  }
+  .main__text {
+    width: 100%;
+    padding: 8px;
+    justify-content: center;
+  }
+  .main__text--1 {
+    display: none;
+  }
+  .main__text--name {
+    font-size: 32px;
+    text-align: center;
+  }
+  .main__text--hide {
+    display: none;
+  }
+  .main__text--2 {
+    text-align: center;
+  }
+  .main__text--3, .main__text--4 {
+    font-size: 28px;
+    text-align: start;
+  }
+  .main__text--5 {
+    font-size: 22px;
+    text-align: start;
+  }
+  .footer {
+    justify-content: center;
+    margin: 0;
+  }
+  .footer [class^=footer] img {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (max-width: 650px) {
+  .header {
+    justify-content: center;
+    text-align: center;
+  }
+  .header__logo {
+    font-size: 2.4rem;
+  }
+  .header__menu {
+    display: none;
+  }
+  .main {
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-size: 100%;
+    background-position: center;
+  }
+  .main__image {
+    width: 260px;
+    height: 260px;
+  }
+  .main__text {
+    width: 100%;
+    padding: 8px;
+    justify-content: center;
+  }
+  .main__text--1 {
+    display: none;
+  }
+  .main__text--name {
+    font-size: 24px;
+    text-align: center;
+  }
+  .main__text--hide {
+    display: none;
+  }
+  .main__text--2 {
+    text-align: start;
+  }
+  .main__text--3, .main__text--4 {
+    font-size: 22px;
+    text-align: start;
+  }
+  .main__text--5 {
+    font-size: 18px;
+    text-align: start;
+  }
+  .footer {
+    justify-content: center;
+    margin: 0;
+  }
+  .footer [class^=footer] img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
