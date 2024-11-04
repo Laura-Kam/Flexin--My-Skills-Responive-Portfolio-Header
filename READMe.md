@@ -21,4 +21,4 @@ This header component is part of Laura Kam's portfolio project, showcasing clean
 
 ### Live Site
 
-[View the website](https://6728ab819d116764c8654478--capable-custard-9a7d8c.netlify.app/)
+[Flexin' My Skills - Responsive Portfolio Header](https://6728ab819d116764c8654478--capable-custard-9a7d8c.netlify.app/)
