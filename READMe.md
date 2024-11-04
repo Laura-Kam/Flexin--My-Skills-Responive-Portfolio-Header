@@ -18,3 +18,7 @@ This project is a responsive header and navigation bar for Laura Kam's web devel
 ### About
 
 This header component is part of Laura Kam's portfolio project, showcasing clean, functional, and responsive design principles.
+
+### Live Site
+
+[View the website](https://6728ab819d116764c8654478--capable-custard-9a7d8c.netlify.app/)
